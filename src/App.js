@@ -9,19 +9,21 @@ class App extends Component{
     render(){
         return(
           <Container fluid>   
-            <Navbar variant="light">
+            <Navbar bg="light" expand="lg">
               <Navbar.Brand href="#home">
-                <img
+              <img
                   alt=""
                   src={require('./image/logo.svg')}
                   className="logo-img d-inline-block align-top"
-                />{' '}
-              </Navbar.Brand>
-              <Nav className="nav-auto justify-content-end">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href="/contact">Contact</Nav.Link>
-              </Nav>
+                />{' '}</Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="justify-content-center">
+                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="/about">About</Nav.Link>
+                  <Nav.Link href="/contact">Contact</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
             </Navbar>
             <Row>
               <Col>
